@@ -1,6 +1,48 @@
-h2 {
-    margin-top: 5px;
+h3 {
+
+    margin-top: 25px;
     text-align: center;
     text-emphasis: bold;
     font-size: 40px;
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  main {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas:
+    " CEO Financial Legal Marketing Social "
+    ;
+    grid-gap: 4em;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+
+  }
+}
+
+
+#CEO {
+  grid-area: CEO;
+}
+
+#Financial {
+  grid-area: Financial;
+}
+
+#Legal {
+  grid-area: Legal;
+}
+
+#Marketing {
+  grid-area: Marketing;
+}
+
+#Social {
+  grid-area: Social;
 }
